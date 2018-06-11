@@ -2,6 +2,7 @@ package com.example.gino1.smartcolor
 
 import android.content.Intent
 import android.os.Bundle
+import android.security.NetworkSecurityPolicy
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -14,6 +15,8 @@ class LoginActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+            
 
         // if user logged in
         if (auth.currentUser != null) {
